@@ -35,9 +35,6 @@ def count_ways(s, conts):
         if s[i] == "." and c > 0:
             return 0
 
-        if s[i] != "?":
-            return 0
-
         if c + 1 < conts[j]:
             res = ways(i + 1, j, c + 1, "#")
         else:
