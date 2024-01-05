@@ -10,7 +10,6 @@ def split_by(l, elem):
 
     res = []
     for i, j in zip(indices, indices[1:]):
-        #if i + 1 < j:
         res.append(l[i + 1:j])
     return res
 
